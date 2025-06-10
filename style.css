@@ -26,6 +26,8 @@ h1 {
 
 main {
   padding: 16px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 section {
@@ -122,4 +124,36 @@ a:hover {
 .article img {
   margin-bottom: 20px;
   border-radius: 5px;
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 100%;
+}
+
+/* Make headings smaller and paragraphs closer together on small screens */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+  #featured-article h2 {
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+  main {
+    padding: 8px;
+  }
+  section {
+    padding: 8px;
+  }
 }
